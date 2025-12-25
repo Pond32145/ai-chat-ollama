@@ -2,7 +2,7 @@
 
 <div align="center">
 
-A full-stack AI chat application with ChatGPT-style interface, powered by local LLM (Ollama). Built with Next.js, Express, MongoDB, and TypeScript.
+A comprehensive AI-powered chat application using LLM (Ollama), built with Next.js, Express, MongoDB, and TypeScript.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -31,12 +31,11 @@ A full-stack AI chat application with ChatGPT-style interface, powered by local 
 
 ## 🎯 Project Overview
 
-This AI Chat Application is a production-ready, full-stack solution that enables users to have conversations with an AI assistant powered by Ollama's local LLM. The application features a ChatGPT-inspired interface with a sidebar for conversation management and a clean, modern chat experience.
+This AI chat application is a ready-to-use, all-in-one solution that allows users to chat with an AI assistant powered by Ollama's local LLM. The application is designed for managing conversations and provides a modern and user-friendly chat experience.
 
 ### Key Highlights
 
 - **🔒 Privacy-First**: All conversations stay on your machine - no external API calls
-- **🎨 Modern UI**: ChatGPT-style interface with dark theme and sidebar navigation
 - **🏗️ Clean Architecture**: Well-structured backend following clean architecture principles
 - **💾 Persistent Storage**: All chat history stored in MongoDB
 - **⚡ Type-Safe**: Full TypeScript implementation across frontend and backend
@@ -45,7 +44,8 @@ This AI Chat Application is a production-ready, full-stack solution that enables
 ## 🛠 Tech Stack
 
 ### Frontend
-- **Next.js 14** - React framework with App Router
+- **Next.js 16.1.0** - React framework with App Router (Latest LTS)
+- **React 19** - Latest React version
 - **TypeScript** - Type-safe development
 - **CSS Modules** - Custom styling with ChatGPT-inspired design
 
@@ -119,10 +119,10 @@ For detailed architecture documentation, see [backend/ARCHITECTURE.md](./backend
 
 ### Frontend Architecture
 
-- **App Router**: Next.js 14 App Router for routing
+- **App Router**: Next.js 16.1.0 App Router for routing
+- **Turbopack**: Default bundler for faster development builds
 - **Component-Based**: Modular components (Sidebar, ChatWindow, MessageBubble, ChatInput)
-- **Client Components**: React hooks for state management
-- **ChatGPT-Style Layout**: Sidebar + main chat area layout
+- **Client Components**: React 19 hooks for state management
 - **Responsive Design**: Mobile-first approach
 - **Real-time Updates**: Immediate UI feedback
 - **Route Structure**:
@@ -131,7 +131,6 @@ For detailed architecture documentation, see [backend/ARCHITECTURE.md](./backend
 
 ## ✨ Features
 
-- ✅ **ChatGPT-Style UI**: Modern interface with sidebar navigation and chat history
 - ✅ **Chat Interface**: Clean, minimal chat UI with message history
 - ✅ **AI Responses**: Powered by local Ollama LLM (llama3)
 - ✅ **Conversation Management**: Each chat has a unique conversationId with auto-generated titles
@@ -611,11 +610,13 @@ npm start      # Start production server
 ```bash
 cd frontend
 
-npm run dev    # Start development server
+npm run dev    # Start development server (uses Turbopack by default in Next.js 16)
 npm run build  # Build for production
 npm start      # Start production server
 npm run lint   # Run ESLint
 ```
+
+**Note**: Next.js 16 uses Turbopack as the default bundler for development, providing faster builds and hot module replacement.
 
 ### Code Quality
 
@@ -683,6 +684,8 @@ npm run lint   # Run ESLint
 - **Privacy**: All data stays local - no external API calls
 - **UI**: ChatGPT-inspired dark theme interface
 - **Model Loading**: The first message in a session may take longer as Ollama loads the model
+- **Next.js 16**: Uses Turbopack for faster development builds
+- **React 19**: Latest React version with improved performance and new features
 
 ## 🤝 Contributing
 
