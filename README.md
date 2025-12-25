@@ -184,8 +184,8 @@ npm run dev
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd shout
+git clone https://github.com/Pond32145/ai-chat-ollama.git
+cd ai-chat-ollama
 ```
 
 ### 2. Set Up Ollama
