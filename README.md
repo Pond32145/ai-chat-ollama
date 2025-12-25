@@ -155,7 +155,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/Pond32145/ai-chat-ollama.git
 cd shout
 
 # 2. Start MongoDB
@@ -701,6 +701,6 @@ ISC
 
 **Built with ❤️ using Next.js, Express, MongoDB, and Ollama**
 
-[Report Bug](https://github.com/your-repo/issues) · [Request Feature](https://github.com/your-repo/issues)
+[Report Bug](https://github.com/Pond32145/ai-chat-ollama/issues) · [Request Feature](https://github.com/Pond32145/ai-chat-ollama/issues)
 
 </div>
