@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: ai-chat-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: ai-chat
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ai-chat-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  ai-chat-network:
+    driver: bridge
+
