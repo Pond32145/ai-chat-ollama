@@ -156,7 +156,7 @@ Before you begin, ensure you have the following installed:
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Pond32145/ai-chat-ollama.git
-cd shout
+cd ai-chat-ollama
 
 # 2. Start MongoDB
 docker-compose up -d
